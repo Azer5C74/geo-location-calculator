@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Geo Location Calculator ",
+        "description": "This API helps to resolve geolocations and calculate the distance in kilometers\n *     from each address to a specific location.",
+        "contact": {
+            "name": "Azer",
+            "email": "taboubi.azer@email.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/calculate-distances/": {
+            "get": {
+                "operationId": "calculate-dsitances",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        }
+    }
+}
