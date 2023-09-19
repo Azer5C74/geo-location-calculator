@@ -64,7 +64,9 @@ To run the Geo Location Calculator, follow these steps:
 1. Start your web server to serve the Laravel application.
 
 2. Run the following command to start the development server:
-```php artisan serve```
+    ```
+    php artisan serve
+    ```
 3. Access the application in your web browser at http://localhost:8000.
 4. In the config/addresses file you will find two arrays one for the references the start address and the addresses array
 is for the - end addresses.
@@ -72,4 +74,6 @@ is for the - end addresses.
 6. You will see the results dumped to the console without stopping the server and a new file within the public/csv file
 will be created to save the output.
 7. To run the unit tests
-```php artisan test```
+   ```
+   php artisan test
+   ```
