@@ -11,8 +11,6 @@ The Geo Location Calculator is a Laravel-based application that resolves geoloca
 - [Usage](#usage)
 - [Running the Application](#running-the-application)
 - [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -35,5 +33,44 @@ To run the Geo Location Calculator, you need to have the following software inst
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/geo-location-calculator.git
+   git clone git@github.com:Azer5C74/geo-location-calculator.git
 
+2. Navigate to the project directory
+    ```
+    cd geo-location-calculator
+    ```
+3. Install the project dependencies
+    ```
+    composer install
+    ```
+4. Create your copy of the .env file based on .env.example
+    ```
+    cp .env.example .env
+    ```
+5. Generate application key
+    ```
+   php artisan key:generate
+   ```
+
+## Configuration
+Before running the application, you need to configure the following settings in your .env file:
+    Google Maps API key (GOOGLE_MAPS_API_KEY) for geocoding. You can obtain an API key from the Google Cloud Console.
+
+## Usage
+### Running the Application
+
+To run the Geo Location Calculator, follow these steps:
+
+1. Start your web server to serve the Laravel application.
+
+2. Run the following command to start the development server:
+```php artisan serve```
+3. Access the application in your web browser at http://localhost:8000.
+4. In the config/addresses file you will find two arrays one for the references the start address and the addresses array
+is for the - end addresses.
+5. Make a call to http://localhost:8000/calculate-distances endpoint to trigger the service and get the results.
+6. You will see the results dumped to the console without stopping the server and a new file within the public/csv file
+will be created to save the output.
+7. To run the unit tests
+```php artisan test
+```

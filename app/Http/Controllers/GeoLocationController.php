@@ -77,6 +77,9 @@ class GeoLocationController extends Controller
 
         // Sort results by distance
         $results = $this->sortResultsByDistance($results);
+        // Outputing the results to console
+
+        dump($results);
 
         // Export results to CSV
         return 'Distances calculated and exported to: ' . $this->exportToCSV($results);
