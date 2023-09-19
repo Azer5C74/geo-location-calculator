@@ -72,5 +72,4 @@ is for the - end addresses.
 6. You will see the results dumped to the console without stopping the server and a new file within the public/csv file
 will be created to save the output.
 7. To run the unit tests
-```php artisan test
-```
+```php artisan test```
